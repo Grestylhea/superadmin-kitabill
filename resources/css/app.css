@@ -1,0 +1,148 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import './kitabill.css';
+
+/* Custom extensions for SuperAdmin panel if any */
+:root {
+    /* Set primary branding to match Kitabill standard */
+    --primary-color: var(--kitabill-primary, #3b82f6);
+}
+
+/* Fix mobile logo */
+.topbar-mobile-logo {
+    height: 32px !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+
+/* Fix dark mode for dashboard cards */
+/* Fix dark mode for all cards and dashboard components */
+[data-theme="dark"] .stat-box,
+[data-theme="dark"] .chart-card,
+[data-theme="dark"] .table-card,
+[data-theme="dark"] .activity-card,
+[data-theme="dark"] .filter-card,
+[data-theme="dark"] .plans-card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .gateway-card,
+[data-theme="dark"] .card {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .card-header {
+    border-bottom-color: #334155 !important;
+    background: #0F172A !important;
+}
+
+/* Fix text colors for dark mode */
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .stat-info h4,
+[data-theme="dark"] .legend-item strong,
+[data-theme="dark"] .tenant-info strong,
+[data-theme="dark"] .stats-value,
+[data-theme="dark"] .stat-value,
+[data-theme="dark"] .page-title,
+[data-theme="dark"] .plan-name,
+[data-theme="dark"] .pricing-value,
+[data-theme="dark"] .limit-item strong,
+[data-theme="dark"] .breakdown-name,
+[data-theme="dark"] .breakdown-value {
+    color: #F1F5F9 !important;
+}
+
+[data-theme="dark"] .stat-info h6,
+[data-theme="dark"] .legend-item span:nth-child(2),
+[data-theme="dark"] .activity-time,
+[data-theme="dark"] .stats-label,
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .page-subtitle,
+[data-theme="dark"] .plan-description,
+[data-theme="dark"] .pricing-label,
+[data-theme="dark"] .limit-item span {
+    color: #94A3B8 !important;
+}
+
+/* Tables and Rows */
+[data-theme="dark"] .table thead th,
+[data-theme="dark"] .plans-table th {
+    background: #0F172A !important;
+    border-bottom-color: #334155 !important;
+    color: #94A3B8 !important;
+}
+
+[data-theme="dark"] .table tbody td,
+[data-theme="dark"] .plan-row {
+    border-bottom-color: #334155 !important;
+    color: #E2E8F0 !important;
+}
+
+[data-theme="dark"] .plan-row:hover,
+[data-theme="dark"] .breakdown-item:hover {
+    background: #0F172A !important;
+}
+
+[data-theme="dark"] .breakdown-item {
+    background: #0F172A !important;
+    border: 1px solid #334155 !important;
+}
+
+[data-theme="dark"] .activity-text {
+    color: #E2E8F0 !important;
+}
+
+/* Inputs and Selects in Dark Mode */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .search-box input {
+    background-color: #0F172A !important;
+    border-color: #334155 !important;
+    color: #F1F5F9 !important;
+}
+
+[data-theme="dark"] .form-control::placeholder,
+[data-theme="dark"] .search-box input::placeholder {
+    color: #64748B !important;
+}
+
+[data-theme="dark"] .bulk-actions-wrapper {
+    background: #0F172A !important;
+    border-color: #334155 !important;
+}
+
+[data-theme="dark"] .search-box i {
+    color: #64748B !important;
+}
+
+/* User Avatars */
+.topbar-user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid var(--kitabill-border);
+}
+
+.menu-avatar-grid {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2px;
+}
+
+/* Ensure global scrollbar hiding for custom scrolls */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+[data-theme="dark"] .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+}
