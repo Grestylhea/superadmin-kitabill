@@ -20,6 +20,7 @@
 
 # 3. Allow standard configuration & run files at root
 !.gitignore
+!.env.example
 !.editorconfig
 !.gitattributes
 !composer.json
